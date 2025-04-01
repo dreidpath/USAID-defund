@@ -13,3 +13,12 @@ The Trump administration delivered a 281-page spreadsheet that lists terminated 
  -  "type"                     -> type (no change): funded or defunded
 
 The data are available as a tab-separated file (.tsv), a Excel spreadsheet (.xlsx) and an RData file (.RData).
+
+I conducted a quick analysis of the data. First I looked at the loss by sector: HIV, TB, Family Planning (FP), WASH, and Child. This analysis used the key_words_in_aid.R script. The different sectors may double count funding. For instance, if a contract was described as "HIV/TB", the loss would appear against HIV and TB.
+
+![Alt text](img/sector.png)
+
+Second I looked at the loss by UN Agency: UNFPA, UNICEF, FAO, WFP, and WHO. This analysis used the vendor_words_in_aid.R script. There sould not be any double counting across UN agency.
+
+![Alt text](img/UNagency.png)
+
